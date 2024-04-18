@@ -1,0 +1,32 @@
+.ticket{
+    border: solid 1px green;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    .ticket__role{
+        text-align: center;
+    }
+
+    .ticket__counter-section{
+        display: flex;
+        gap: 20px;
+
+        button{
+            background-color: rgb(241, 196, 99);
+            font-size: 20px;
+            border-radius: 30px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .ticket{
+        width: auto;
+    }
+}

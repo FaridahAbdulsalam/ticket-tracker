@@ -19,14 +19,14 @@ const Ticket = ({ name, role }: TicketProps) => {
   }
 
   return (
-    <div>
-      <h3>{name}</h3>
-      <h4>{role}</h4>
-      <div>
-        <h4>Counter</h4>
-        <button onClick={handleDecrment}>-</button>
+    <div className="ticket">
+      <h3 className="ticket__name">{name}</h3>
+      <h4 className="ticket__role">{role}</h4>
+      <h4 className="ticket__counter">Counter</h4>
+      <div className="ticket__counter-section">
+        <button className="ticket__minus-button" onClick={handleDecrment}>-</button>
         <p>{counter}</p>
-        <button onClick={handleIncrement}>+</button>
+        <button className="ticket__plus-button" onClick={handleIncrement}>+</button>
       </div>
     </div>
   );

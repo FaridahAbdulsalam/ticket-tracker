@@ -1,8 +1,6 @@
-import { useState } from "react";
-import Ticket from "./components/Ticket//Ticket";
 import team from "./data/team";
-import TicketContainer from "./components/Ticket/TicketContainer/TicketContainer";
-
+import SearchEmployees from "./containers/SearchEmployees/SearchEmployees";
+import "./App.scss"
 
 const App = () => {
   //write ts/js here and then inject into HTML in return
@@ -11,7 +9,8 @@ const App = () => {
   return (
     <div>
       <h1>{title}</h1>
-      <TicketContainer employees={team} />
+      <h4>Search for employees below</h4>
+        <SearchEmployees employees={team}/>
     </div>
   );
 };
