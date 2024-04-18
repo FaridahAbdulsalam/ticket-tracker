@@ -10,6 +10,11 @@
     .ticket__role{
         text-align: center;
     }
+    .ticket__counter-border{
+        text-align: center;
+        border: 1px solid green;
+        padding: 30px;
+    }
 
     .ticket__counter-section{
         display: flex;
@@ -25,7 +30,7 @@
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 500px) {
     .ticket{
         width: 30vw;
         height: auto;

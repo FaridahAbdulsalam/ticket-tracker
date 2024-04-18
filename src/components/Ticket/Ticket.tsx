@@ -22,11 +22,13 @@ const Ticket = ({ name, role }: TicketProps) => {
     <div className="ticket">
       <h3 className="ticket__name">{name}</h3>
       <h4 className="ticket__role">{role}</h4>
+      <div  className="ticket__counter-border">
       <h4 className="ticket__counter">Counter</h4>
       <div className="ticket__counter-section">
         <button className="ticket__minus-button" onClick={handleDecrment}>-</button>
         <p>{counter}</p>
         <button className="ticket__plus-button" onClick={handleIncrement}>+</button>
+      </div>
       </div>
     </div>
   );
