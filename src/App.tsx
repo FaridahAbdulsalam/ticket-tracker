@@ -7,7 +7,7 @@ const App = () => {
   let title = "Ticket Tracker";
 
   return (
-    <div>
+    <div className="main-page">
       <h1>{title}</h1>
       <h4>Search for employees below</h4>
         <SearchEmployees employees={team}/>
