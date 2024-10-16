@@ -1,6 +1,6 @@
 import team from "./data/team";
 import SearchEmployees from "./containers/SearchEmployees/SearchEmployees";
-import "./App.scss"
+import "./App.scss";
 
 const App = () => {
   //write ts/js here and then inject into HTML in return
@@ -10,7 +10,7 @@ const App = () => {
     <div className="main-page">
       <h1>{title}</h1>
       <h4>Search for employees below</h4>
-        <SearchEmployees employees={team}/>
+      <SearchEmployees employees={team} />
     </div>
   );
 };

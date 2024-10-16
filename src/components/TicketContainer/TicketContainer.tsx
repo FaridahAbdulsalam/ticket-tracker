@@ -1,6 +1,6 @@
 import Team from "../../data/Teams";
 import Ticket from "../Ticket/Ticket";
-import "./TicketContainer.scss"
+import "./TicketContainer.scss";
 
 type TicketProps = {
   employees: Team[];
