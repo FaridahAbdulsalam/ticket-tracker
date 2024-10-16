@@ -14,10 +14,9 @@ const Ticket = ({ name, role }: TicketProps) => {
   };
 
   const handleDecrment = () => {
-    if(counter < 0){
-      setCounter(0)
-    }else{
-      setCounter(counter - 1);
+    if(counter > 0)
+      {
+      setCounter(counter - 1)
     }
   };
 
